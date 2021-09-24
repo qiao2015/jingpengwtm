@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\MyLeo\jingpengwtm2.2</_PublishTargetUrl>
+    <History>True|2021-04-27T03:19:42.4814570Z;True|2021-04-27T11:10:21.1267837+08:00;True|2021-04-26T18:13:24.5721895+08:00;False|2021-04-26T18:12:33.0403588+08:00;True|2021-04-26T18:07:34.7450607+08:00;True|2021-04-26T17:05:34.3682682+08:00;</History>
+  </PropertyGroup>
+</Project>

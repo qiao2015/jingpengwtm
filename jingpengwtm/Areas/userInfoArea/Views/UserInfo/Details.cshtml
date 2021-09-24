@@ -1,0 +1,25 @@
+﻿@model jingpengwtm.userInfoArea.ViewModels.UserInfoVMs.UserInfoVM
+@inject IStringLocalizer<WalkingTec.Mvvm.Core.Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.ID" />
+<wt:display field="Entity.PhoneNO" />
+<wt:display field="Entity.Email" />
+<wt:display field="Entity.PWD" />
+<wt:display field="Entity.UserName" />
+<wt:display field="Entity.ImagePath" />
+<wt:display field="Entity.Signature" />
+<wt:display field="Entity.ShowAll" />
+<wt:display field="Entity.OptTime" />
+<wt:display field="Entity.IsDel" />
+<wt:display field="Entity.Age" />
+<wt:display field="Entity.Address" />
+<wt:display field="Entity.Sex" />
+<wt:display field="Entity.LastToken" />
+<wt:display field="Entity.IsShare" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

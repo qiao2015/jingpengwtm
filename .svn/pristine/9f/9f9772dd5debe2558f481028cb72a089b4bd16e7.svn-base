@@ -1,0 +1,13 @@
+﻿@model jingpengwtm.userRFIDArea.ViewModels.UserRFIDVMs.UserRFIDListVM
+@inject IStringLocalizer<WalkingTec.Mvvm.Core.Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.ID" />
+<wt:textbox field="Searcher.RFIDCode" />
+<wt:textbox field="Searcher.UserGuid" />
+<wt:textbox field="Searcher.IsDel" />
+<wt:textbox field="Searcher.Note" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/userRFIDArea/UserRFID/Search"/>

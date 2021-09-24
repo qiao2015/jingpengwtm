@@ -1,0 +1,19 @@
+﻿@model jingpengwtm.userRFIDArea.ViewModels.UserRFIDVMs.UserRFIDVM
+@inject IStringLocalizer<WalkingTec.Mvvm.Core.Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:textbox field="Entity.ID" />
+<wt:textbox field="Entity.RFIDCode" />
+<wt:textbox field="Entity.UserGuid" />
+<wt:textbox field="Entity.Times" />
+<wt:datetime field="Entity.OptTime" />
+<wt:textbox field="Entity.IsDel" />
+<wt:textbox field="Entity.Note" />
+</wt:row>
+    <wt:hidden field="Entity.ID" />
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

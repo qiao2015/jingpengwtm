@@ -1,0 +1,15 @@
+﻿@model jingpengwtm.userInfoArea.ViewModels.UserInfoVMs.UserInfoListVM
+@inject IStringLocalizer<WalkingTec.Mvvm.Core.Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:textbox field="Searcher.ID" />
+<wt:textbox field="Searcher.PhoneNO" />
+<wt:textbox field="Searcher.UserName" />
+<wt:textbox field="Searcher.IsDel" />
+<wt:textbox field="Searcher.Age" />
+<wt:textbox field="Searcher.Address" />
+<wt:combobox field="Searcher.IsShare" empty-text="@Localizer["All"]" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/userInfoArea/UserInfo/Search"/>
